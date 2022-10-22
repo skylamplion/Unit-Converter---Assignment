@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit converter</title>
+    <style>
+        *{margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(132, 167, 198);
+            text-align: left;
+            margin-top: 50px;
+            border: 2px solid black;
+            height: 200px;
+            width: 250px;
+            margin-left: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="array">
+    <h1>JSON Example</h1>
+    <br>
+</div>
+    <script>
+        const topper='{"School Name":"SBOA","Year":1998,"Rank in the City":1,"No. of students studying":1000}'
+        const object = JSON.parse(topper);
+        let z=""
+        for(let key in object){
+            document.write(key+"="+object[key]+"<br>")
+}
+    </script>
+</body>
+</html>
